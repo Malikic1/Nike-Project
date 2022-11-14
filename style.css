@@ -1,0 +1,132 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+nav{
+    width: auto;
+    float: right;
+    margin: 2rem 0 0 2rem;
+}
+button{
+    border: none;
+    color: antiquewhite;
+}
+nav button{
+  background-color: transparent;
+  margin-left: 2rem;
+  font-size: 1.2rem;
+}
+nav button:nth-of-type(1){
+    width: 5rem;
+    height: 1.8rem;
+}
+.btn{
+    background-color: rgb(175, 0, 0) !important;
+    border-radius: 1.4rem;
+}
+.logo{
+    width: 12rem;
+    height: 5rem;
+    margin: 2rem 0 0 3% ;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    align-self: center;
+}
+.container1{
+    width: 60%;
+    position: relative;
+    left: 5rem;
+    top: 4rem;
+    z-index: 2;
+}
+.font1{
+ font-size: 5rem;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ font-weight: 400;
+}
+.font2{
+    font-size: 5.5rem;
+    font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    position: relative;
+    top: -0.5rem;
+}
+.font3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+}
+.btn-2{
+ width: 10rem;   
+ height: 2.5rem;
+ font-size: 1rem;
+}
+.dot{
+    margin: -17rem 0 0 -3rem;
+    width: 1rem;
+}
+.dot p{
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-top: 1.2rem;
+    background-color: white;
+    border-radius: 50%;
+}
+.dot p:nth-of-type(2){
+ background-color: red;
+}
+.container2{
+    width: 35rem;
+    z-index: 1;
+}
+.hero{
+    width: 28rem;
+    height: 18rem;
+    position: relative;
+}
+.real{
+    margin-top: -1rem;
+}
+.shadow{
+    transform: rotate(-162deg);
+    top: -1.5rem;
+    z-index: -1;
+    opacity: 0.15;
+}
+/* laptop and IPad*/
+@media screen and (min-width:728px) and (max-width:1000px) {
+     nav{left: 40%;}
+     nav button{margin-left: 1rem;}
+     .container2{width: 25rem !important;margin-right: 3%;margin-top: 2.5rem;} 
+}
+@media screen and (min-width:850px) and (max-width:1000px) {
+     .container1{width: 80%;transform: scale(0.9) !important;margin: -2rem 0 0 -3rem;}
+     .hero{width: 23rem !important;height: 14rem !important;}
+}
+@media screen and (min-width:728px) and (max-width:850px) {
+     .container1{width: 80%;transform: scale(0.8) !important;margin: -2.5rem 0 0 -3rem;}
+     .hero{width: 20rem !important;height: 12rem !important;}
+     .container2{margin-top: 4rem;}
+ }
+ /*mini tablet */
+ @media screen and (max-width:727px){
+    .flex{flex-direction: column-reverse;padding-left: 1rem;}
+    nav{float: none;width: 40rem;margin: 1rem 0 0 10%;}
+    .container1, .container2{height: 26rem;}
+ } 
+ @media screen and (min-width:500px) and (max-width:728px) {
+     .container1{width: 100%;opacity: 0.9;}
+     .container2{margin: 4rem 0 0 30%;}    
+ }
+ @media screen and (max-width:499px){
+      nav button{margin-left: 0.5rem;}
+     .container1{width: 100vw;opacity: 0.9;}
+     .font1,.font2{font-size: 3.5rem;}
+     .container2{margin: 4rem 0 0 10%;}    
+     .dot{margin-top: -15rem;}
+}
